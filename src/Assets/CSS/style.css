@@ -1,0 +1,97 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container h5 {
+  font-size: 60px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-family: "Baloo 2";
+}
+
+.container p {
+  font-size: 20px;
+  color: #eeeeee;
+  margin: 0;
+  font-family: "Baloo 2";
+}
+
+.carousel-item.active .container h5 {
+  animation: fadeInLeft 2s ease forwards;
+}
+.carousel-item.active .container p,
+.carousel-item.active .container a {
+  animation: fadeInRight 2s ease forwards;
+}
+
+.fas {
+  font-size: x-large;
+  color: black;
+}
+
+.btn {
+  border-radius: 20px;
+  font-family: "Baloo 2";
+  font-size: 15px;
+}
+
+.avatar-root {
+  display: flex;
+}
+.container-for-companies {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.name {
+  font-family: "Baloo 2";
+  font-size: 10px;
+}
+.carousels-section {
+    background-color: #dfe6e9;
+    padding: 10px;
+}
+.application{
+    background-color: #b2bec7;
+}
+.stores-home-page{
+    text-align: center;
+}
+.stores-home-page .title{
+    font-family: "Baloo 2";
+    font-size: 20px;
+}
+.stores-home-page .see-all-link{
+    font-size: 18px;
+    font-family: "Baloo 2";
+    text-decoration: none;
+}
+.fa-tags{
+    font-size: 15px;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
